@@ -7,7 +7,7 @@ extern "C"
 {
 #endif
 
-    int tiny_solve(TinySolver *solver);
+    int tiny_solve(TinySolver *solver , double *forward_pass_time , double* update_slack_time ,double *update_dual_time, double *update_linear_cost_time);
     void tiny_init(TinySolver *solver);
 
     void update_primal(TinySolver *solver);
